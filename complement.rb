@@ -11,6 +11,9 @@ class Complement
   end
 
   def self.of_rna(rna_strand)
-    "G"
+    case rna_strand
+      when "C" then "G"
+      when "G" then "C"
+    end
   end
 end
