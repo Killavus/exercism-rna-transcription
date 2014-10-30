@@ -11,11 +11,13 @@ class Complement
   end
 
   def self.of_rna(rna_strand)
-    case rna_strand
-      when "C" then "G"
-      when "G" then "C"
-      when "U" then "A"
-      when "A" then "T"
-    end
+    rna_strand.chars.map do |nucleotide|
+      case nucleotide
+        when "C" then "G"
+        when "G" then "C"
+        when "U" then "A"
+        when "A" then "T"
+      end
+    end.join
   end
 end
