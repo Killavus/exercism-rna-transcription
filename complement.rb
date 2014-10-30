@@ -4,6 +4,7 @@ class Complement
       when "C" then "G"
       when "G" then "C"
       when "T" then "A"
+      when "A" then "U"
     end
   end
 end
