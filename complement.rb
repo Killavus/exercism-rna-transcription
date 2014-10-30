@@ -14,6 +14,7 @@ class Complement
     case rna_strand
       when "C" then "G"
       when "G" then "C"
+      when "U" then "A"
     end
   end
 end
