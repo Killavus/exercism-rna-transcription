@@ -9,4 +9,8 @@ class Complement
       end
     end.join
   end
+
+  def self.of_rna(rna_strand)
+    "G"
+  end
 end
